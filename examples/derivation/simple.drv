@@ -1,0 +1,40 @@
+Derive(
+    
+    # Outputs
+    [
+        ("out","/nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-simple","","")
+    ],
+    
+    # Input derivations
+    [
+        ("/nix/store/hjzzl7y4qy90800c8zk92z9w07l37x2a-gcc-wrapper-16.2.0.drv",["out"]),
+        ("/nix/store/m7bmd2qz1zcnk4k25y5cg6wbb3y9qwcb-coreutils-9.12.drv",["out"]),
+        ("/nix/store/mgicc2710bw3ffi1814yc82057fxka5d-bash-interactive-5.3p20.drv",["out"])
+    ],
+    
+    # Input files
+    [
+        "/nix/store/aawjyji4aa05m9fhiw9q63045978w8iw-simple.c",
+        "/nix/store/r8zl4l46j9mcnp6iva0r82x9wnpc41nx-simple_builder.sh"
+    ],
+
+    # System
+    "x86_64-linux",
+    
+    # Build command
+    "/nix/store/kwyi4bq5s2qgwbhz6cs4gjy57c2zdxws-bash-interactive-5.3p20/bin/bash",
+    [
+        "/nix/store/r8zl4l46j9mcnp6iva0r82x9wnpc41nx-simple_builder.sh"
+    ],
+    
+    # Build sandbox environment variables
+    [
+        ("builder","/nix/store/kwyi4bq5s2qgwbhz6cs4gjy57c2zdxws-bash-interactive-5.3p20/bin/bash"),
+        ("coreutils","/nix/store/cb987zkxvsv0490753ilrvn5yk7ylgxi-coreutils-9.12"),
+        ("gcc","/nix/store/r5ri78axx1qggkjq3vawywlzglg70b5w-gcc-wrapper-16.2.0"),
+        ("name","simple"),
+        ("out","/nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-simple"),
+        ("src","/nix/store/aawjyji4aa05m9fhiw9q63045978w8iw-simple.c"),
+        ("system","x86_64-linux")
+    ]
+)

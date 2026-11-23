@@ -1,8 +1,12 @@
 # Set-up Guide
 
+Disclaimer: I have only tried this on WSL, not MacOS.
+
 ## Pre-requisites
 
 ### Windows Subsystem for Linux
+
+Windows only of course.
 
 ```ps1
 wsl --install --name Ubuntu-26.04
@@ -13,7 +17,7 @@ wsl --install --name Ubuntu-26.04
 ```bash
 # Single-user installation
 # https://nixos.org/download/
-curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install | sh -s -- --no-daemon
+curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install | sh -s -- --daemon
 
 # Enable experimental features
 mkdir -p ~/.config/nix
