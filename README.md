@@ -139,13 +139,24 @@ No, because packages are immutable, we can use binary caches.
 
 The official binary cache for Nixpkgs can be found at https://cache.nixos.org/
 
-## What is it good for?
+## What Problems can it solve?
 
-### Development Environments
+### Project Specific Dependencies
+
+Scenario: Working on multiple projects that require different versions of the same tools.
+
+### CI/CD
 
 ### Server Management
 
-### Deployment
+### Declarative Home Environment
+
+- VSCode and extensions
+- Secrets
+- Use same setup everywhere
+- WSL not always available
+
+### Performance?
 
 ## Why not use Nix?
 
