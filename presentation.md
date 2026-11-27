@@ -42,9 +42,9 @@
 
 # What makes Nix different?
 
-- Declarative
-- Reproducible - 
-- Reliable - once it's working, it's hard to break
+- Declarative - easy to share configuration
+- Reproducible - if a package works on one machine, it will work on another
+- Reliable - installing/uninstalling a package cannot break other packages
 
 
 ---
@@ -88,7 +88,7 @@
 
 Nix:
 
-- Bit-for-bit reproducability
+- Bit-for-bit reproducibility
 - Atomic upgrades and rollbacks
 
 Docker:

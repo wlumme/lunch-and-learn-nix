@@ -75,7 +75,7 @@ This is doing the following steps under the hood:
 ```bash
 nix-instantiate ./examples/derivation/simple.nix
 
-# /nix/store/rxiwsyib03f5ynhj6rah4c5alks1nqkk-simple.drv
+# /nix/store/rxiwsyib03f5ynhj6rah4c5alks1nqkk-my-simple-derivation.drv
 ```
 
 This creates a our derivation file, formatted and commented [here](./examples/derivation/simple.drv) for convenience:
@@ -83,9 +83,9 @@ This creates a our derivation file, formatted and commented [here](./examples/de
 2. Build the derivation:
 
 ```bash
-nix-store -r /nix/store/rxiwsyib03f5ynhj6rah4c5alks1nqkk-simple.drv
+nix-store -r /nix/store/rxiwsyib03f5ynhj6rah4c5alks1nqkk-my-simple-derivation.drv
 
-# /nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-simple
+# /nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-my-simple-derivation
 ```
 
 3. Symlink the output to `./result/`
@@ -93,7 +93,7 @@ nix-store -r /nix/store/rxiwsyib03f5ynhj6rah4c5alks1nqkk-simple.drv
 You can now run your program!
 
 ```bash
-/nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-simple/simple
+/nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-my-simple-derivation/simple
 
 # Or use the symlink:
 ./result/simple
@@ -107,7 +107,7 @@ All built packages live inside the read-only `/nix/store/`.
 You may have noticed the package we built earlier has a really ugly path.
 
 ```bash
-/nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-simple
+/nix/store/66mva2c1ydjkh4jp9xsmbf5dsaakrrng-my-simple-derivation
 ```
 
 The hash `66mva2c1ydjkh4jp9xsmbf5dsaakrrng` is calculated based on all the input information.
