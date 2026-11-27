@@ -5,8 +5,12 @@
   home.homeDirectory = "/home/wlum";
   home.stateVersion = "26.05";
 
+  home.packages = with pkgs; [
+    python3
+  ];
+
   nixpkgs.config.allowUnfree = true;
-  
+
   programs = {
     git = {
       enable = true;

@@ -1,2 +1,4 @@
-result
 .env
+nixos.qcow2
+presentation.html
+result
