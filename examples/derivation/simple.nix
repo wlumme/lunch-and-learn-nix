@@ -4,7 +4,7 @@ let
   pkgs = import <nixpkgs> { };
 in
 derivation {
-  name = "simple";
+  name = "my-simple-derivation";
   builder = "${pkgs.bash}/bin/bash";
   args = [ ./simple_builder.sh ];
   gcc = pkgs.gcc;

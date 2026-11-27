@@ -5,6 +5,23 @@
 ---
 
 
+1. Features of Nix
+    - Declarative
+    - Reproducible
+    - Reliable
+1. How Nix works
+    - Nix shells
+    - Packaging a program
+    - The Nix store
+1. Examples
+    - Development environment
+    - User environment
+    - System configuration
+    - CI/CD
+
+---
+
+
 # What is Nix?
 
 - Package manager?
@@ -23,11 +40,11 @@
 ---
 
 
-# What makes Nix differtent?
+# What makes Nix different?
 
 - Declarative
-- Reproducible
-- Reliable
+- Reproducible - 
+- Reliable - once it's working, it's hard to break
 
 
 ---
@@ -36,7 +53,6 @@
 # Declarative?
 
 - Describe the outcome, not the action
-- 
 
 ---
 
